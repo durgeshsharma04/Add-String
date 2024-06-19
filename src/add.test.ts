@@ -13,4 +13,7 @@ describe("Add functions", () => {
   it("test with /n", ()=>{
     expect(add("1\n2,3")).toEqual(6)
   })
+  it("test with delimiter and \n", ()=>{
+    expect(add("//;\n1;2")).toEqual(3)
+  })
 });
