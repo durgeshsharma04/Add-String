@@ -1,7 +1,7 @@
 import { add } from "../src/Add";
 
 describe("Add functions", () => {
-  it("should add two numbers correctly", () => {
+  it("test with single integer", () => {
     expect(add("1")).toEqual(1);
   });
 });
