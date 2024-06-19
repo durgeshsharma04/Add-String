@@ -16,4 +16,10 @@ describe("Add functions", () => {
   it("test with delimiter and \n", ()=>{
     expect(add("//;\n1;2")).toEqual(3)
   })
+  it("test with - value show message", ()=>{
+    expect(add("//;\n1;2")).toEqual(3)
+  })
+  it("test return mesaage",()=>{
+    expect(add('//;\n-1;-2')).toBe('negative numbers not allowed -1,-2')
+  })
 });
