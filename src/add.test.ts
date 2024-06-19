@@ -20,6 +20,6 @@ describe("Add functions", () => {
     expect(add("//;\n1;2")).toEqual(3)
   })
   it("test return mesaage",()=>{
-    expect(add('//;\n-1;-2')).toBe('negative numbers not allowed -1,-2')
+    expect(add('//;\n-1;2 ;-3')).toBe('Negative numbers not allowed -1,-3')
   })
 });
